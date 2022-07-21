@@ -1,0 +1,275 @@
+
+
+
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    /* ---------header part start-------- */
+    .header{background: #161616;
+        border-radius: 30px;
+        margin-top: 50px;
+        margin-left: 40px;
+        margin-right: 39px;
+        margin-bottom: 130px;
+        padding: 55px;
+    }
+    .main-header{
+    
+        /* display: flex;  */
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+    }
+    .banner-info{margin-right: 24px;}
+    
+    .banner-title{font-size: 70px;
+        color: #FFFFFF;}
+    
+    
+        .banner-desc{color: #FFFFFF;
+        margin-bottom: 30px;}
+    
+    
+    .btn{display: inline-flex;
+        height: 50px;
+        padding: 0;
+        background: #DD0000;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        overflow: hidden;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .btn-text , .btn-icon{display: inline-flex;
+    align-items: center;
+    padding: 0 15px;
+    color: #FFFFFF;
+    height: 100%;
+    font-weight: 600;
+    }
+    .banner-info .main-banner img{
+        width: 581px;
+    height: 613px;
+    }
+    
+    /* ---------header part finish-------- */
+    
+    /*------------ mid section part :start----------- */
+    .container{
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    
+    
+    
+    .button-group{background-color: #161616;
+        width: 200px;
+        height: 300px;
+        border-radius: 5px;
+        padding: 5px;
+        margin-left:15px;
+        margin-right: 15px;
+    
+    
+    }
+    .button-group a{text-decoration: none;}
+    .button-group button{
+        
+        
+        cursor: pointer;
+        padding: 5px;
+        width: 150px;
+        height: 64px;
+        display: block;
+        
+        border-radius: 15px;
+        
+        
+    
+    }
+    .match-btn{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-weight: 600;
+        font-size: medium;
+        
+    }
+    .group-btn{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-weight: 600;
+        font-size: medium;
+    }
+    .blog-btn{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-weight: 600;
+        font-size: medium;
+        background-color: #DD0000;
+        
+    }
+    .blog-btn-text{
+        color: #FFFFFF;
+    }
+    
+    /* -------------<!-- blogs part -->-------- */
+    .match-details{
+        display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px; 
+    }
+    .match-info{
+        border: 2px solid #FFFFFF;
+        width: 230px;
+        height: 100px;
+        margin-bottom: 100px;
+    
+    }
+    .vs{
+        font-size: medium;
+        font-weight: 600;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    
+    
+    .match-time{
+        margin-top: 15px;
+        margin-left: 50px;
+        color: #4D4D4D;
+    }
+    .match-time h3{color: #161616;
+    }
+    
+    /*------------ mid section part :finish----------- */
+    
+    
+    
+    /*------------- footer start------------ */
+    footer{background: #161616;
+    padding-top:40px ;}
+    .goal{color: #FFFFFF;
+        
+        margin-left: 500px;
+    }
+    
+    
+    .footer-style{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-style h3{font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #FFFFFF;}
+    .social-links {
+        list-style: none;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+        
+    }
+    .social-links-2{list-style: none;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;}
+    
+    .social-links li{
+        margin: 0 10px;
+        
+    }
+    .social-links a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .social-links a i{
+        font-size: 1.1rem;
+    }
+    
+    .social-links-2 li{
+        margin: 0 10px;
+    }
+    .social-links-2 a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .social-links-2 a i{
+        font-size: 1.1rem;
+    
+    }
+    /* ----------@Media Qu-----------  */
+    /* Mobile devices */
+    @media only screen and (max-width:688px) {
+        
+    
+        /* header */
+            .header,.container,.match-details{flex-direction: column;}
+            
+            .main-header,.container,.match-details{
+            grid-template-columns: repeat(1,1fr);}
+    
+            .banner-title{font-size: 25px;
+                padding: 5px;
+            }
+            .banner-desc{font-size: 15px;
+            padding: 2px;} 
+            .main-banner img{width: 100%;
+            margin-top: 20px;} 
+            
+        
+            .btn{align-items: center;
+            padding: 10px;
+            margin-top: 5px;}
+    
+    
+            .container{align-items: center;
+            margin-left: 65px;
+            
+        }
+        .button-group{flex-direction: row;}
+    
+    .social-links{grid-template-columns: repeat(1,1fr);
+        }
+    
+        .social-links li{margin-top: 10px;
+            margin-bottom: 10px;}
+            
+        
+    }
+    
+
+    /* tablet */
+    @media only screen and(min-width:688px) and (max-width:992) {
+        
+        .container,.blogs{
+            grid-template-columns: repeat(2,1fr);}
+        .match-details{flex-direction: column;}
+        .footer-style{width: 320px;}
+    }
